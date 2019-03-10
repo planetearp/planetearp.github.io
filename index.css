@@ -1,0 +1,121 @@
+/*
+* @Author: thiagopagliarelli
+* @Date:   2019-03-09 14:19:51
+* @Last Modified by:   thiagopagliarelli
+* @Last Modified time: 2019-03-10 13:38:14
+*/
+
+
+@font-face {
+    font-family: "PixelMiners";
+    src: url(./fonts/pixel-miners.otf);
+}
+
+@font-face {
+    font-family: "OldSchoolAdventures";
+    src: url(./fonts/old-school-adventures.ttf);
+}
+
+h1 {
+	color: #f9f7f1;
+	text-align: center;
+	font-family: 'PixelMiners', 'Muli', sans-serif; 
+	font-size: 4vh;
+}
+
+h2 {
+	color: #cccc33;
+	font-family: 'OldSchoolAdventures', 'Muli', sans-serif; 
+	text-align: center;
+	font-size: 2vh;
+
+}
+
+body {
+	font-family: 'Muli', sans-serif;
+	background-color: black;
+}
+
+p {
+	color: #f9f7f1;
+	padding: 0 10% 0 10%;
+}
+
+main {
+	margin: 0 auto;
+	background-image: url("./img/earth-curvature-clean.jpg");
+	background-size: auto 100%;
+	min-height: 100vh;
+	padding: 20px 30px 0;
+}
+
+.nav-bar {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	list-style: none;
+	color: #d4d4d4;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-item {
+	list-style: none;
+	font-family: 'OldSchoolAdventures', 'Muli', sans-serif;
+	padding: 5px 0 0 0;
+	font-size: 0.75em;
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: inherit;
+}
+/* Media query for Desktop */
+
+@media only screen and (min-width: 768px) {
+
+	main {
+		max-width: 1200px;
+		margin: 0 auto;
+		background-image: url("./img/earth-curvature-clean.jpg");
+		background-size: auto;
+		min-height: 800px;
+		padding: 20px 30px 0;
+	}
+
+	h1 {
+		color: #d4d4d4;
+		text-align: center;
+		font-family: 'PixelMiners', 'Muli', sans-serif; 
+		font-size: 5vmax;
+	}
+
+	h2 {
+		color: #cccc33;
+		font-family: 'OldSchoolAdventures', 'Muli', sans-serif; 
+		text-align: center;
+		font-size: 1.75vmax;
+	}
+
+	.nav-bar {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		justify-items: center;
+
+		list-style: none;
+		color: #d4d4d4;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-item {
+		list-style: none;
+		font-family: 'OldSchoolAdventures', 'Muli', sans-serif; 
+		align-self: center;
+	}
+}
+
+

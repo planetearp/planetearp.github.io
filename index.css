@@ -1,8 +1,8 @@
 /*
 * @Author: thiagopagliarelli
 * @Date:   2019-03-09 14:19:51
-* @Last Modified by:   thiagopagliarelli
-* @Last Modified time: 2019-03-10 13:38:14
+* @Last Modified by:   Thiago Earp
+* @Last Modified time: 2019-03-10 14:07:56
 */
 
 
@@ -54,7 +54,6 @@ main {
 	grid-template-columns: 100%;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	justify-items: center;
-	align-items: center;
 	list-style: none;
 	color: #d4d4d4;
 	margin: 0;
@@ -72,6 +71,9 @@ main {
 	text-decoration: none;
 	color: inherit;
 }
+
+
+
 /* Media query for Desktop */
 
 @media only screen and (min-width: 768px) {
@@ -104,7 +106,6 @@ main {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
 		justify-items: center;
-
 		list-style: none;
 		color: #d4d4d4;
 		margin: 0;

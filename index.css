@@ -2,7 +2,7 @@
 * @Author: thiagopagliarelli
 * @Date:   2019-03-09 14:19:51
 * @Last Modified by:   Thiago Earp
-* @Last Modified time: 2019-03-10 14:07:56
+* @Last Modified time: 2019-03-11 08:32:10
 */
 
 
@@ -72,6 +72,9 @@ main {
 	color: inherit;
 }
 
+.section {
+	padding: 7% 10%;
+}
 
 
 /* Media query for Desktop */
@@ -88,17 +91,17 @@ main {
 	}
 
 	h1 {
-		color: #d4d4d4;
+		color: #f9f7f1;
 		text-align: center;
 		font-family: 'PixelMiners', 'Muli', sans-serif; 
-		font-size: 5vmax;
+		font-size: 4vmax;
 	}
 
 	h2 {
-		color: #cccc33;
+		color: #f9f7f1;
 		font-family: 'OldSchoolAdventures', 'Muli', sans-serif; 
 		text-align: center;
-		font-size: 1.75vmax;
+		font-size: 1.5vmax;
 	}
 
 	.nav-bar {
@@ -107,7 +110,7 @@ main {
 		grid-template-rows: 1fr;
 		justify-items: center;
 		list-style: none;
-		color: #d4d4d4;
+		color: #cccc33;
 		margin: 0;
 		padding: 0;
 	}

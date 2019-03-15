@@ -19,22 +19,22 @@
 </head>
 <body>
 	<main class="main-container">
+
 		<header>
 			<h1>Welcome to Planet Earp</h1>
 		</header>
 
 		<nav>
 			<div class="nav-bar">
-				<a class="nav-item about-nav" href="#">about</a>
-				<a class="nav-item scribblings-nav" href="https://medium.com/@thiagoearp" target="_blank">scribblings</a>
-				<a class="nav-item code-nav" href="https://github.com/planetearp/" target="_blank">code</a>
-				<a class="nav-item credit-nav" href="#">credits</a>
+				<a class="nav-item about-nav" href="#about" show="about">about</a>
+				<a class="nav-item scribblings-nav" href="#scribblings" show="scribblings">scribblings</a>
+				<a class="nav-item code-nav" href="#code" show="code">code</a>
+				<a class="nav-item credit-nav" href="#credits" show="credits">credits</a>
 			</div>
 		</nav>
 		
-		<section class="section">
-
-			<div class="about content-1">
+		<section class="bg1">
+			<div class="about content-1 area-block" id="about">
 
 				<div class="left-content">
 					<img src="./img/profile.jpg" alt="Yours truly" class="profile-pic pixel-border">
@@ -49,8 +49,10 @@
 					</p>
 				</div>
 			</div>
+		</section>
 
-			<div class="scribblings content-2">
+		<section class="static">
+			<div class="scribblings content-2 area-block" id="scribblings">
 				
 				<div class="left-content">
 					<img src="./img/planeticon.png" alt="Home" class="profile-pic pixel-border">
@@ -63,14 +65,16 @@
 					<p><a href="https://www.cloudbet.com/en/blog/bitcoin-101/10320-what-is-bitcoin-the-bits-behind-the-coin-part-1">Cloudbet Blog</a></p>
 				</div>
 			</div>
+		</section>
 
-			</div><div class="code content-3">
-				<p>I am just a humble, non-latin placeholder while this guy makes stuff more shiny and responsive. Loren, no Ipsum yet.
-				</p>
-
+		<section class="bg2">
+			<div class="code content-3 area-block" id="code">
+				<p>Check out my <a href="https://github.com/planetearp">GitHub</a></p>
 			</div>
+		</section>
 
-			<div class="credits content-4">
+		<section class="bg3">
+			<div class="credits content-4 area-block" id="credits">
 
 				<h3>DESIGN AND CODE</h3>
 				<p>Yours truly</p>
@@ -85,7 +89,6 @@
 				<p><a href="https://www.dafont.com/8bit-wonder.font">8-Bit Wonder</a> @ DaFont</p>
 				<p><a href="Dafont https://www.dafont.com/old-school-adventures.font">Old School Adventures</a> @ DaFont</p>
 				<p><a href="https://fonts.googleapis.com/css?family=Press+Start+2P ">Press Start 2P</a> @ Google Fonts</p>
-				
 			</div>
 		</section>
 
@@ -93,5 +96,7 @@
 
 		<footer></footer>
 	</main>
+
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

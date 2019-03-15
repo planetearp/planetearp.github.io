@@ -18,6 +18,9 @@
     src: url(./fonts/old-school-adventures.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Muli', sans-serif;
@@ -59,11 +62,12 @@ a {
 
 main {
 	margin: 0 auto;
-	background-image: url("./img/earth-curvature-clean.jpg");
+/*	background-image: url("./img/earth-curvature-clean.jpg");
 	background-size: auto 100%;
-	min-height: 100vh;
+	min-height: 100vh;*/
 	padding: 20px 20px 0;
 }
+
 
 .nav-bar {
 	display: grid;
@@ -92,8 +96,26 @@ main {
 /* MAIN SECTION */
 
 
-.section {
+section {
 	padding: 5% 0;
+}
+
+.bg1 {
+	background-image: url("./img/earth-curvature-clean.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	height: 800px;
+}
+
+.static {
+	height: 400px;
+}
+
+.bg2 {
+	background-image: url("./img/earth-curvature-clean-reverse.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	height: 800px;
 }
 
 .content-1 {
@@ -129,7 +151,7 @@ main {
 }
 
 .content-3 {
-	display: none;
+	font-weight: bold;
 }
 
 .content-4 {
@@ -172,6 +194,8 @@ main {
 	right: -5px;
 }
 
+
+
 /* Media query for Desktop */
 
 @media only screen and (min-width: 768px) {
@@ -179,9 +203,9 @@ main {
 	main {
 		max-width: 1200px;
 		margin: 0 auto;
-		background-image: url("./img/earth-curvature-clean.jpg");
+		/*background-image: url("./img/earth-curvature-clean.jpg");
 		background-size: auto;
-		min-height: 800px;
+		min-height: 800px;*/
 		padding: 20px 20px 0;
 	}
 
@@ -211,7 +235,7 @@ main {
 		list-style: none;
 		color: #cccc33;
 		margin: 0;
-		padding: 0;
+		padding: 0 10%;
 	}
 
 	.nav-item {
@@ -221,8 +245,27 @@ main {
 		font-size: 1em;
 	}
 
-	.section {
+	section {
 		padding: 5% 5%;
+}
+
+.bg1 {
+	background-image: url("./img/earth-curvature-clean.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	height: 800px;
+}
+
+.static {
+	height: 400px;
+}
+
+
+.bg2 {
+	background-image: url("./img/earth-curvature-clean-reverse.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	height: 800px;
 }
 
 	.content-1 {
@@ -247,6 +290,13 @@ main {
 		align-self: center;
 		justify-self: center;
 		border-radius: 50%;
+	}
+
+	.content-3 {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		padding: 0 10%;
 	}
 
 	.content-4 p {

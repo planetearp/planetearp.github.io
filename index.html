@@ -9,31 +9,45 @@
 
 	<link rel="stylesheet" type="text/css" href="./index.css">
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="./img/planeticon.png">
-	
-<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="./js/parallax.js-1.5.0/parallax.js"></script>
+	<script src="./js/parallax.js-1.5.0/parallax.min.js"></script>
+
+
+	<!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+ 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	 -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 
 </head>
+
 <body>
 	<main class="main-container">
 
-		<header>
-			<h1>Welcome to Planet Earp</h1>
-		</header>
-
-		<nav>
+		<nav id="navbar">
 			<div class="nav-bar">
+				<a class="home" href=".\index.html">home</a>
 				<a class="nav-item about-nav" href="#about" show="about">about</a>
-				<a class="nav-item scribblings-nav" href="#scribblings" show="scribblings">scribblings</a>
+				<a class="nav-item text-nav" href="#text" show="text">text</a>
 				<a class="nav-item code-nav" href="#code" show="code">code</a>
 				<a class="nav-item credit-nav" href="#credits" show="credits">credits</a>
 			</div>
 		</nav>
+
+		<header>
+			<h1 id="welcome">Welcome to Planet Earp</h1>
+			<div>
+				<img src="./img/planet-icon.png" alt="Home" class="profile-pic pixel-border" id="loading">
+			</div>
+
+		</header>
 		
-		<section class="bg1">
+		<section class="bg1 parallax-window" data-parallax="scroll" data-image-src="./img/earth-curvature-clean.jpg">
 			<div class="about content-1 area-block" id="about">
 
 				<div class="left-content">
@@ -48,35 +62,44 @@
 					<p>PS: I'm still building this, please bear with me. ;)
 					</p>
 				</div>
+
+				<div></div>
 			</div>
 		</section>
 
-		<section class="static">
-			<div class="scribblings content-2 area-block" id="scribblings">
+		<section class="static parallax-window" data-parallax="scroll" data-image-src="./img/night.jpg">
+			<div class="text content-2 area-block" id="text">
 				
 				<div class="left-content">
-					<img src="./img/planeticon.png" alt="Home" class="profile-pic pixel-border">
+					<img src="./img/rocket.png" alt="Rocket" id="rocket">
 				</div>
 
-				<div class="right-content">
-					<h2>Scribblings</h2>
-					<p><a href="https://medium.com/@thiagoearp">Medium</a></p>
-					<p><a href="https://hackernoon.com/@thiagoearp">Hackernoon</a></p>
-					<p><a href="https://www.cloudbet.com/en/blog/bitcoin-101/10320-what-is-bitcoin-the-bits-behind-the-coin-part-1">Cloudbet Blog</a></p>
+				<div class="right-content backbox">
+					<h2>TEXT</h2>
+					<p>Check out my <a href="https://medium.com/@thiagoearp">Medium</a> profile</p>
+					<p>Read stories by me on <a href="https://hackernoon.com/@thiagoearp">Hackernoon</a></p>
+					<p>My work for the <a href="https://www.cloudbet.com/en/blog/bitcoin-101/10320-what-is-bitcoin-the-bits-behind-the-coin-part-1">Cloudbet Blog</a></p>
 				</div>
 			</div>
 		</section>
 
-		<section class="bg2">
+		<section class="bg2 parallax-window" data-parallax="scroll" data-image-src="./img/earth-curvature-clean-reverse.jpg">
 			<div class="code content-3 area-block" id="code">
-				<p>Check out my <a href="https://github.com/planetearp">GitHub</a></p>
+
+				<div>
+					<h2>CODING PROJECTS</h2>
+					<p>Check out my <a href="https://github.com/planetearp">GitHub</a> repos</p>
+					<p>Also some <a href="https://codepen.io/planetearp/">CodePen</a> play</p>
+				</div>
+
 			</div>
+
 		</section>
 
 		<section class="bg3">
-			<div class="credits content-4 area-block" id="credits">
+			<div class="credits backbox content-4 area-block" id="credits">
 
-				<h3>DESIGN AND CODE</h3>
+				<h3>PAGE DESIGN</h3>
 				<p>Yours truly</p>
 				
 				<h3>BACKGROUND</h3>
@@ -92,11 +115,10 @@
 			</div>
 		</section>
 
-		<aside></aside>
-
 		<footer></footer>
 	</main>
 
 	<script type="text/javascript" src="index.js"></script>
+	<script src="./js/greeting.js"></script>
 </body>
 </html>

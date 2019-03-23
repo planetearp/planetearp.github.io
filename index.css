@@ -35,7 +35,6 @@
 }
 
 
-
 /* Mobile-first */
 
 html {
@@ -58,7 +57,7 @@ h1 {
 	padding: 25% 0 15% 10%;
 	text-align: left;
 	font-family: 'PixelMiners', 'Muli', sans-serif; 
-	font-size: 3.5vmax;
+	font-size: 3vmax;
 	text-shadow: 0px 0px 10px #f9f7f1, 0px 0px 5px #f9f7f1;
 }
 
@@ -95,6 +94,9 @@ main {
 	display: grid;
 }
 
+footer {
+}
+
 .parallax-window {
     min-height: 400px;
     background: transparent;
@@ -104,14 +106,17 @@ main {
 	display: grid;
 	width: 100vw;
 	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(5, 1fr);
 	list-style: none;
 	color: #cccc33;
 	text-shadow: 0px 0px 10px #cccc33, 0px 0px 5px #cccc33;
-	box-shadow: 0 1px 3px 0 rgba(255,255,255,255.16), 0 2px 10px 0 rgba(255,255,255,255.12);
+	box-shadow: 0 20px 60px 0 black;
 	margin: 0;
 	padding: 10px 0;
-	background-image: linear-gradient(rgb(45,43,50), black);
+	background-image: url("./img/steel-vent2.png");
+	/*background-image: url("./img/miniwindow.png");*/
+	background-size: contain;
+  	background-repeat: round;
   	position: fixed;
   	overflow: hidden;
   	top: 0;
@@ -145,8 +150,8 @@ main {
 }
 
 #code {
-	padding-top: 70vh;
-    margin-top: -70vh;
+	padding-top: 40vh;
+    margin-top: -40vh;
     align-self: center;
 }
 
@@ -163,18 +168,47 @@ section {
 	height: 800px;
 }
 
-.static {
+.bg2 {
+	background-image: url("./img/spaceshipwindow.png");
+	background-size: auto 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
 	height: 800px;
-	background-image: url("./img/spaceship-window.png");
-	background-size: 100% 100%;
 }
 
-.bg2 {
+.bg3 {
 /*	background-image: url("./img/earth-curvature-clean-reverse.jpg");
 */	background-size: auto 100%;
 	background-repeat: no-repeat;
 	height: 800px;
 	display: grid;
+}
+
+.bg4 {
+	background-image: url("./img/steel-plate2.png");
+	background-size: contain;
+  	background-repeat: round;
+}
+
+
+.static {
+	background: radial-gradient(at top center, rgb(21, 21, 21), black);
+	height: 80px;
+}
+
+
+.static2 {
+	background: radial-gradient(at bottom center, rgb(21, 21, 21), black);
+	height: 80px;
+}
+
+
+#borderimg { 
+  border-top: 15px solid transparent;
+  /*padding: 15px;*/
+  border-image-source: url("./img/steel-plate.png");
+  border-image-repeat: round;
+  border-image-slice: 30;
 }
 
 .content-1 {
@@ -219,6 +253,10 @@ section {
 	font-weight: bold;
 }
 
+#rocket-right {
+	width: 10vw;
+}
+
 .content-4 {
 	margin: 0 10% 0 10%;
 	display: grid;
@@ -261,7 +299,7 @@ section {
 
 
 
-/* Media query for Desktop */
+/* Desktop > 768 */
 
 @media only screen and (min-width: 768px) {
 
@@ -286,22 +324,19 @@ section {
 
 	p {
 	font-size: 0.75em;
-}
-
-	.topnav .icon {
- 		display: none;
 	}
 
 	.nav-bar {
 		display: grid;
-		width: 100vw;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		max-width: 100%;
+		grid-template-columns: repeat(5, minmax(80px, 100px));
 		grid-template-rows: 1fr;
+		grid-gap: 20px;
 		align-items: center;
 		list-style: none;
 		color: #cccc33;
 		/*text-shadow: 0px 0px 10px #cccc33, 0px 0px 5px #cccc33;*/
-		margin: 0;
+		margin: 0; 
 		padding: 20px 30px;
 		position: fixed;
 		overflow: hidden;
@@ -316,24 +351,30 @@ section {
 
 	section {
 		padding: 5% 5%;
-}
+	}
 
-.bg1 {
-	/*background-image: url("./img/earth-curvature-clean.jpg");*/
-	background-size: auto 100%;
-	background-repeat: no-repeat;
-	height: 800px;
-}
+	.bg1 {
+		/*background-image: url("./img/earth-curvature-clean.jpg");*/
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		height: 800px;
+	}
 
 
-.bg2 {
-	
-/*	background-image: url("./img/earth-curvature-clean-reverse.jpg");*/
-	background-size: auto 100%;
-	background-repeat: no-repeat;
-	height: 800px;
-}
-
+	.bg3 {
+		
+	/*	background-image: url("./img/earth-curvature-clean-reverse.jpg");*/
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		height: 800px;
+	}
+/*
+	.bg2 {
+		background-size: 100% 100%;
+		background-position: center;
+		background-clip: padding-box;
+	}
+*/
 	.content-1 {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
@@ -344,7 +385,6 @@ section {
 
 	.content-2 {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
 		align-items: center;
 		grid-gap: 10px;
 		padding: 0 10%;

@@ -1,21 +1,5 @@
 
 
-// Sticky Navbar 
-
-// window.onscroll = function() {navStick()};
-
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function navStick() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
-
-
 const menu = document.getElementsByClassName('nav-item');
 const areaBlock = document.getElementsByClassName('area-block')
 
@@ -41,6 +25,3 @@ function toggleVisibility(show) {
   }
 
 clearAll();
-// function changeClass(newClass) {
-//   document.getElementById("inv").className = newClass;
-// }
